@@ -2741,13 +2741,6 @@ Standard 6 pin header for AVR programming</description>
 <part name="M4" library="SparkFun-Electromechanical" deviceset="SMALL_SERVO" device=""/>
 <part name="M5" library="SparkFun-Electromechanical" deviceset="SMALL_SERVO" device=""/>
 <part name="Y1" library="SparkFun-FreqCtrl" deviceset="RESONATOR" device="PTH"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D3" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D4" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D5" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D6" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
-<part name="D7" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="D8" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M07" device=""/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M07" device=""/>
@@ -2772,13 +2765,6 @@ Standard 6 pin header for AVR programming</description>
 <instance part="M4" gate="G$1" x="309.88" y="71.12"/>
 <instance part="M5" gate="G$1" x="309.88" y="48.26"/>
 <instance part="Y1" gate="G$1" x="132.08" y="124.46"/>
-<instance part="D1" gate="G$1" x="170.18" y="231.14"/>
-<instance part="D2" gate="G$1" x="182.88" y="231.14"/>
-<instance part="D3" gate="G$1" x="193.04" y="231.14"/>
-<instance part="D4" gate="G$1" x="203.2" y="231.14"/>
-<instance part="D5" gate="G$1" x="213.36" y="231.14"/>
-<instance part="D6" gate="G$1" x="226.06" y="231.14"/>
-<instance part="D7" gate="G$1" x="236.22" y="231.14"/>
 <instance part="D8" gate="G$1" x="243.84" y="231.14"/>
 <instance part="JP3" gate="G$1" x="83.82" y="-43.18"/>
 <instance part="JP4" gate="G$1" x="127" y="-43.18"/>
@@ -2813,10 +2799,6 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="99.06" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="182.88" y1="233.68" x2="182.88" y2="236.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="-45.72" x2="134.62" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
@@ -2825,10 +2807,6 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="U1" gate="A" pin="PB1"/>
 <wire x1="99.06" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="193.04" y1="233.68" x2="193.04" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="3"/>
@@ -2841,10 +2819,6 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="99.06" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="203.2" y1="233.68" x2="203.2" y2="236.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="4"/>
 <wire x1="132.08" y1="-40.64" x2="134.62" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
@@ -2853,10 +2827,6 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="U1" gate="A" pin="PB3"/>
 <wire x1="99.06" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="213.36" y1="233.68" x2="213.36" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="5"/>
@@ -2873,10 +2843,6 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="99.06" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="A"/>
-<wire x1="226.06" y1="233.68" x2="226.06" y2="236.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="6"/>
 <wire x1="132.08" y1="-35.56" x2="134.62" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
@@ -2889,10 +2855,6 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="U1" gate="A" pin="PB5"/>
 <wire x1="99.06" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D7" gate="G$1" pin="A"/>
-<wire x1="236.22" y1="233.68" x2="236.22" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="7"/>
@@ -3075,10 +3037,6 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="134.62" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="170.18" y1="233.68" x2="170.18" y2="236.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="-48.26" x2="134.62" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
@@ -3189,8 +3147,8 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="-38.1" y1="86.36" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="5VREG" gate="G$1" pin="3"/>
-<wire x1="116.84" y1="180.34" x2="119.38" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="5VREG" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3259,34 +3217,6 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="132.08" y1="116.84" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="170.18" y1="226.06" x2="170.18" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="182.88" y1="226.06" x2="182.88" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="193.04" y1="226.06" x2="193.04" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="203.2" y1="226.06" x2="203.2" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="213.36" y1="226.06" x2="213.36" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="226.06" y1="226.06" x2="226.06" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="236.22" y1="226.06" x2="236.22" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="D8" gate="G$1" pin="C"/>
 <wire x1="243.84" y1="226.06" x2="243.84" y2="223.52" width="0.1524" layer="91"/>
 </segment>
@@ -3303,8 +3233,8 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="116.84" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="3VREG" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="3VREG" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="157.48" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -3362,12 +3292,12 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="38.1" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="5VREG" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="3VREG" gate="G$1" pin="3"/>
 <wire x1="116.84" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="5VREG" gate="G$1" pin="3"/>
+<wire x1="116.84" y1="180.34" x2="119.38" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V" class="0">
@@ -3384,8 +3314,8 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="38.1" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="3VREG" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="157.48" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="3VREG" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="160.02" x2="119.38" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
