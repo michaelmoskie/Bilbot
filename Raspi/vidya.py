@@ -13,19 +13,22 @@ imgloc = Image("mtndew.png")
 square = DrawingLayer((imgloc.width, imgloc.height))
 box = (150,150)
 movement = 0
-# 0 = Not Moving, 1 = Move Forward, 2 = Move Left, 3 = Move Right
-
+# 0 = Not Moving, 1 = Move Forward, 2 = Move Left, 3 = Move Right 4 = Go Backwards
+img = cam.getImage()
+width = img.width
+divisor = 3
+leftmax = (width/divisor)
+rightmin = width - (width/divisor)
 while (display.isNotDone()):
 	img = cam.getImage()
-	width = img.width
-	divisor = 3
-	leftmax = (width/divisor)
-	rightmin = width - (width/divisor)	
 	keypoints = img.findKeypointMatch(imgloc, quality, minDist, minMatch)
 	if keypoints:
 		for keypoint in keypoints:
 			img = img.applyLayers()
 			keypoint.draw(color=Color.BLUE)
+			if (keypoint.height() > 420):
+				print "WE HAVE ARRIVED CAPTAIN!"
+				break
 			if (keypoint.x > 0 and keypoint.x < leftmax):
 				print "Dew is on left"
 				movement = 2
@@ -43,7 +46,6 @@ while (display.isNotDone()):
 		movement = 0
 		bilb.turnLeft()
 		#BILBOT GOT THE SPINS OH LORDEHHH
-
 	img.show()
-
 del cam	
+display.done = True
