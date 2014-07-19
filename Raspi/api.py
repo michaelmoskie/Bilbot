@@ -3,15 +3,7 @@ import serial
 class bilbot:
 	def __init__(self):
 		print "You made an object"
-		self.ser = serial.Serial(0)
-		print "I'm using port "+self.ser.portstr
-		self.ser.baudrate = 115200
-		
-		try:
-			self.ser.open()
-		except Exception, e:
-			print "Serial port broken! " + str(e)
-			exit()
+		ser = serial.Serial("/dev/ttyACM0", 115200)
 			
 
 	#Functions for sending data
