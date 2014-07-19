@@ -3,7 +3,7 @@ import serial
 class bilbot:
 	def __init__(self):
 		print "You made an object"
-		ser = serial.Serial("/dev/ttyACM0", 115200)
+		self.ser = serial.Serial("/dev/ttyACM0", 115200)
 			
 
 	#Functions for sending data
@@ -12,30 +12,30 @@ class bilbot:
 		self.ser.write(str(x))
 
 	def goForward(self):
-		sendCommand("forward *");
+		self.sendCommand("forward *");
 
 	def goBackward(self):
-		sendCommand("backward *");
+		self.sendCommand("backward *");
 
 	def turnRight(self):
-		sendCommand("right *");
+		self.sendCommand("right *");
 
 	def turnLeft(self):
-		sendCommand("left *");
+		self.sendCommand("left *");
 
 	def allStop(self):
-		sendCommand("allstop *");	
+		self.sendCommand("allstop *");	
 
 	def digitalWrite(self,pin,state):
-		sendCommand("dw"+str(pin)+','+str(state)+" *")
+		self.sendCommand("dw"+str(pin)+','+str(state)+" *")
 
 	def analogWrite(self,pin,state):
-		sendCommand("aw"+str(pin)+","+str(state)+" *")
+		self.sendCommand("aw"+str(pin)+","+str(state)+" *")
 	#Functions for getting data
 	def analogRead(self,pin):
-		sendCommand("aread"+str(pin)+" *")
+		self.sendCommand("aread"+str(pin)+" *")
 		return ser.readline()
 
 	def digitalRead(self, pin):
-		sendCommand("dread"+str(pin)+" *")
+		self.sendCommand("dread"+str(pin)+" *")
 		return ser.readline()
