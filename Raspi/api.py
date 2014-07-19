@@ -3,7 +3,7 @@ import serial
 class bilbot:
 	def __init__(self):
 		print "You made an object"
-		self.ser = serial.Serial("/dev/ttyACM0", 115200)
+		self.ser = serial.Serial("/dev/ttyACM0", 115200) #This port will change on a raspi, this is for debugging
 			
 
 	#Functions for sending data
@@ -12,19 +12,19 @@ class bilbot:
 		self.ser.write(str(x))
 
 	def goForward(self):
-		self.sendCommand("1*");
+		self.sendCommand('1');
 
 	def goBackward(self):
-		self.sendCommand("4*");
+		self.sendCommand('4');
 
 	def turnRight(self):
-		self.sendCommand("3*");
+		self.sendCommand('3');
 
 	def turnLeft(self):
-		self.sendCommand("2*");
+		self.sendCommand('2');
 
 	def allStop(self):
-		self.sendCommand("0*");	
+		self.sendCommand('0');	
 
 	def digitalWrite(self,pin,state):
 		self.sendCommand("dw"+str(pin)+','+str(state)+" *")
